@@ -5,15 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jordan Standing</title>
-  <link rel="stylesheet" href="animate.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <a href="index.html"><img class="name" src="images/name.png"></a>
+    <a href="index.html"><img class="name lazy" data-src="../images/name.png"></a>
     <nav>
       <ul id="nav">
         <li><a href="index.html">HOME</a></li>
@@ -21,7 +19,7 @@
       </ul>
     </nav>
 
-    <img id="header-img" src="images/worktable.jpg" alt="">
+    <img id="header-img" class="lazy" data-src="../images/worktable.jpg" alt="">
 
     <main>
       <section class="container">
@@ -42,12 +40,12 @@
 
       <section class="container">
         <div class="col">
-          <a href="blush_collection.html"><img class="post-image" src="images/BLUSHicon.jpg" alt=""></a>
+          <a href="blush_collection.html"><img class="lazy post-image" data-src="images/BLUSHicon.jpg" alt=""></a>
           <h2>Blush Collection</h2>
             <p>A vintage, lingerie inspired evening wear collection. </p>
         </div>
         <div class="col">
-          <a href="bridal.html"><img class="post-image" src="images/BRIDALicon.jpg" alt=""></a>
+          <a href="bridal.html"><img class="lazy post-image" data-src="images/BRIDALicon.jpg" alt=""></a>
           <h2>Bridal</h2>
             <p>Step into the pages of a fairytale with these bridal designs.  </p>
         </div>
@@ -55,12 +53,12 @@
 
       <section class="container">
         <div class="col">
-          <a href="active_wear.html"><img class="post-image" src="images/ACTIVEicon.jpg" alt=""></a>
+          <a href="active_wear.html"><img class="lazy post-image" data-src="images/ACTIVEicon.jpg" alt=""></a>
           <h2>Activewear</h2>
             <p>Inspired by the bold lines in a neon sign, these active wear designs are made for the strong girl who is confident and fun. </p>
         </div>
         <div class="col">
-          <a href="pensandneedles.html"><img class="post-image" src="images/PNicon.jpg" alt=""></a>
+          <a href="pensandneedles.html"><img class="lazy post-image" data-src="images/PNicon.jpg" alt=""></a>
           <h2>Pens & Needles Co.</h2>
             <p>Examples from Jordan's stationary brand Pens & Needles Co. Watercolor, calligraphy, and lots of hand-painted florals.</p>
         </div>
@@ -75,11 +73,10 @@
       <li class="footer-item">Follow</li>
       <li class="footer-item">
         <a href="https://www.instagram.com/pensandneedlesco/" target="_blank">
-          <img src="images/instagram.png" alt="Instagram"></li>
+          <img class="lazy" data-src="images/instagram.png" alt="Instagram"></li>
         </a>
     </ul>
   </footer>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
 </html>
