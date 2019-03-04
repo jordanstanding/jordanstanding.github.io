@@ -1,9 +1,12 @@
 $(document).ready(function() {
 
-  $(".lazy").Lazy();
+    $(function() {
+        $('.lazy').lazy();
+    });
 
-  $('a').on('click', function(ev) {
-    ev.preventDefault();
-  });
+
+  // $('a').on('click', function(ev) {
+  //   ev.preventDefault();
+  // });
 
 });
