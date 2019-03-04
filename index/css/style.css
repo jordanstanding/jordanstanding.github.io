@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+a, #nav{
+  text-decoration: none;
+  color: gray;
+  margin: 5px;
+  position: relative;
+}
+
+a:hover {
+  color: pink;
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+}
+
+.col-home {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+}
+
+#email {
+  width: 15px;
+  height: 15px;
+}
+
+footer {
+  height: 100px;
+  background-color: rgba(204,204,204,.5);
+  width: 100%;
+  margin: 0 auto;
+}
+
+#footer-container {
+  display: flex;
+}
+
+#footer-content {
+  flex: 1;
+  padding: 35px 0 0 0;
+  margin-left: 55px;
+  text-align: left;
+}
+
+.footer-item {
+  padding-right: 10px;
+  color: gray;
+}
+
+.footer-item img {
+  height: 18px;
+  width: 18px;
+  margin: -3px;
+}
+
+h1 {
+  float: left;
+  font-family: 'Inconsolata', monospace;
+  font-weight: lighter;
+  font-size: 30px;
+  padding: 5px 5px 5px 50px;
+}
+
+h2 {
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+#head {
+  color: pink;
+  text-decoration: overline;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+h5 {
+  margin: 5px 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+}
+
+#header-img {
+  width: 100%;
+  height: auto;
+  margin: 170px 0px -10px auto;
+  background-size: contain;
+}
+
+#header-img-pens {
+  width: 100%;
+  height: auto;
+  margin: 175px auto 0;
+}
+
+.home {
+  justify-content: center;
+}
+
+input {
+  width: 28%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+li {
+  display: inline;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.name {
+  margin-top: 50px;
+  height: 75px;
+  padding-right: 200px;
+}
+
+#newsletter {
+  height: 150px;
+  background-color: rgba(204,204,204,.5);
+  font-size: 25px;
+  margin: 0;
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  line-height: 1.25em;
+}
+.col-home p {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+.post-comment {
+  margin: 10px 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+}
+
+.post-image {
+  width: 100%;
+  margin: 0;
+}
+
+section {
+  color: gray;
+  font-family: 'Playfair Display', serif;
+  margin: 50px auto;
+  width: 90%;
+}
+
+#social {
+  flex: 1;
+  padding: 35px 35px 0 0;
+  text-align: right;
+}
+
+ul#nav {
+  font-family: 'Playfair Display', serif;
+  margin: -45px 0px -145px 0px;
+  text-align: right;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+ul#nav2 {
+  font-family: 'Playfair Display', serif;
+  margin: -45px 0px 0px 0px;
+  text-align: right;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    padding: 5px 0 0 50px;
+  }
+
+  .container {
+    display: block;
+  }
+
+  ul#nav {
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    letter-spacing: 3px;
+  }
+
+  ul#nav2 {
+    font-family: 'Playfair Display', serif;
+    margin: 0px 0px 0px 0px;
+    text-align: right;
+    text-decoration: none;
+    letter-spacing: 3px;
+  }
+
+  li, #nav {
+    margin: 4px;
+  }
+
+  a, #nav{
+    margin: -10px auto;
+    padding-right: 0px;
+  }
+
+  footer {
+    height: 100px;
+    background-color: rgba(204,204,204,.5);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #footer-container {
+    display: flex;
+  }
+
+  #footer-content {
+    flex: 1;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+  }
+
+  .footer-item {
+    padding: 0px 0px 0px 0px;
+    color: gray;
+  }
+
+  .footer-item img {
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
+  }
+
+  #header-img {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px -75px auto;
+    background-size: contain;
+  }
+
+  .col {
+    flex: 1;
+    padding: 0;
+    margin: 10% auto;
+  }
+
+  .name {
+    margin: 10% auto 0 auto;
+    padding: 0;
+    height: auto;
+    max-width: 100%;
+  }
+  .col-home {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+
+  #social {
+    padding: 5px 35px 0px 0px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p, .col-home p {
+    font-size: 14px;
+  }
+
+  #head {
+    margin-bottom: 5px;
+  }
+
+  #header-img-pens {
+    margin: 0 auto;
+  }
+
+}
