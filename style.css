@@ -164,6 +164,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   position: absolute;
+  bottom: 0;
   left: 0;
   right:0;
   z-index: 999;
@@ -418,13 +419,14 @@ ul#nav {
   }
 
   #footer-container {
-    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
   #footer-content {
-    flex: 1;
-    padding: 0px 0px 0px 0px;
-    text-align: left;
+    flex: inherit;
+    padding: 0;
+    margin: initial;
   }
 
   .footer-item {
@@ -462,10 +464,6 @@ ul#nav {
     padding: 0;
     margin: 0;
     margin-bottom: 5%;
-  }
-
-  #social {
-    padding: 5px 35px 0px 0px;
   }
 
   h2 {
