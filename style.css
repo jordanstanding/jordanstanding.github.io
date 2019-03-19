@@ -359,6 +359,14 @@ ul#nav {
 /*---------------- MEDIA QUERY --------------------*/
 @media screen and (max-width: 768px) {
 
+  #int {
+    margin: 25% auto 0;
+  }
+
+  #int h1 {
+    font-size: 4vw;
+  }
+
   #homepage .links {
     max-width: 100%;
     overflow: hidden;
