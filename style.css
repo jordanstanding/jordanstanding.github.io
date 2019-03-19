@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,23 +14,139 @@ a, #nav{
   color: gray;
   margin: 5px;
   position: relative;
+  display: block;
 }
 
 a:hover {
   color: pink;
 }
 
+.col a {
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#homepage .logo {
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: absolute;
+  top: 22%;
+  opacity: 1;
+  animation-duration: .5s;
+  animation-delay: 1s;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#homepage .links {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+}
+
+#homepage .links a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 0.55em;
+  text-indent: 10px;
+  font-size: 16px;
+  font-family: 'playfair display';
+  padding: 55px 60px;
+  background-size: cover;
+  transition: all ease-in-out .5s;
+
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+#homepage .links a:hover {
+  transform: scale(1.05);
+  text-decoration: line-through;
+}
+
+.int .flex-col {
+  display: none;
+}
+
+.colapse-nav img {
+  max-width: 100%;
+  height: auto;
+}
+
+.show {
+  display: block;
+}
+
 .col {
   flex: 1;
   padding: 10px;
   margin: 10px;
+  position: relative;
+}
+
+.portfolio .col:hover {
+  opacity: .5;
+}
+
+.portfolio section.container:nth-child(2) {
+  max-width: 100%;
+  margin: 0 auto 2.5%;
+  max-height: 600px;
+  overflow: hidden;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 65%;
+}
+
+.portfolio section.container:nth-child(2) .col:hover {
+  opacity: 1;
+}
+
+.txt-overlay h2 {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-weight: 100;
+  color: #ffc0cb;
+}
+
+.txt-overlay {
+  position: absolute;
+  top: 33%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 1px 1px 6px #000;
+  max-width: 90%;
 }
 
 .col-home {
   flex: 1;
   padding: 10px;
-  margin: 10px;
-  margin-bottom: 100px;
+  margin: 60px auto;
 }
 
 .container {
@@ -47,6 +164,10 @@ footer {
   background-color: rgba(204,204,204,.5);
   width: 100%;
   margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right:0;
+  z-index: 999;
 }
 
 #footer-container {
@@ -87,7 +208,6 @@ h2 {
 #head {
   color: pink;
   text-decoration: overline;
-  margin-top: 100px;
   margin-bottom: 25px;
 }
 
@@ -171,29 +291,100 @@ section {
 }
 
 #social {
-  flex: 1;
-  padding: 35px 35px 0 0;
+  display: flex;
+  align-items: center;
   text-align: right;
 }
 
 ul#nav {
   font-family: 'Playfair Display', serif;
-  margin: -45px 0px -145px 0px;
   text-align: right;
   text-decoration: none;
   letter-spacing: 3px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+.flex-col {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-ul#nav2 {
-  font-family: 'Playfair Display', serif;
-  margin: -45px 0px 0px 0px;
-  text-align: right;
-  text-decoration: none;
-  letter-spacing: 3px;
+.flex-col img {
+  max-width: 100%;
+  height: auto;
 }
 
+#int {
+  margin: 5% auto 0;
+}
 
+#int h1 {
+  letter-spacing: .3em;
+  font-family: helvetica;
+  color: #000;
+  line-height: 5em;
+  float: none;
+  text-align: center;
+  padding: 0;
+}
+
+.bling {
+  display: block;
+  background: transparent;
+  max-width: 100%;
+  height: auto;
+  width: 14%;
+  position: absolute;
+  top: 72%;
+  right: 5.5%;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite!important;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.pn footer#footer-container {
+    justify-content: flex-end;
+}
+
+/*---------------- MEDIA QUERY --------------------*/
 @media screen and (max-width: 768px) {
+
+  #homepage .links {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  #homepage .links a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 0.55em;
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'playfair display';
+    background-size: cover;
+    transition: all ease-in-out .5s;
+    height: 15vw;
+    margin: 0 auto;
+    width: 100vw;
+    background-repeat: no-repeat;
+    line-height: 5vw;
+    padding: 5%;
+    background-position: center;
+  }
+
+  .bling {
+    top: 100vw;
+  }
 
   h1 {
     padding: 5px 0 0 50px;
@@ -206,17 +397,10 @@ ul#nav2 {
   ul#nav {
     text-align: center;
     text-decoration: none;
-    margin: 10px;
-    letter-spacing: 3px;
+    margin: 5% auto;
+    justify-content: flex-end;
   }
 
-  ul#nav2 {
-    font-family: 'Playfair Display', serif;
-    margin: 0px 0px 0px 0px;
-    text-align: right;
-    text-decoration: none;
-    letter-spacing: 3px;
-  }
 
   li, #nav {
     margin: 4px;
@@ -266,6 +450,7 @@ ul#nav2 {
     flex: 1;
     padding: 0;
     margin: 10% auto;
+    height: 100%;
   }
 
   .name {
@@ -293,11 +478,23 @@ ul#nav2 {
   }
 
   #head {
-    margin-bottom: 5px;
+    margin: 7% auto 5%;
   }
 
   #header-img-pens {
     margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .portfolio section.container:nth-child(2) {
+    overflow: initial;
+    margin: 0 auto -3%;
+    background-size: cover;
+    height: 70vw;
+    background-repeat: no-repeat;
   }
 
 }
