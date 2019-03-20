@@ -26,6 +26,11 @@ a:hover {
   height: 100%;
 }
 
+  .col p{
+    font-family: helvetica;
+    text-shadow: 0px 0px 10px #000;
+  }
+
 .background {
   position: absolute;
   z-index: -1;
@@ -464,11 +469,6 @@ ul#nav {
     padding: 0;
     margin: 10% auto;
     height: 100%;
-  }
-
-  .col p{
-    font-family: helvetica;
-    text-shadow: 0px 0px 10px #000;
   }
 
   .name {
