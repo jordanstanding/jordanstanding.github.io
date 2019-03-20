@@ -26,10 +26,21 @@ a:hover {
   height: 100%;
 }
 
-  .col p{
-    font-family: helvetica;
-    text-shadow: 0px 0px 10px #000;
-  }
+.col p{
+  font-family: helvetica;
+  text-shadow: 0px 0px 10px #000;
+}
+
+.int .flex-col {
+  display: none;
+}
+
+.colapse-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
 
 .background {
   position: absolute;
@@ -509,6 +520,10 @@ ul#nav {
     background-size: cover;
     height: 70vw;
     background-repeat: no-repeat;
+  }
+
+  .colapse-nav {
+    height: 50vw;
   }
 
 }
