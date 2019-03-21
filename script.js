@@ -7,15 +7,18 @@ $(document).ready(function() {
   /* Open when someone clicks on the span element */
   $('.open').on('click', function() {
     if($(window).width() > 768) {
-      $("#myNav").css('width', '60%');
+      $("#myNav").css('width', '50%');
     } else {
       $("#myNav").css('width', '100%');
     }
+    if( $('#myNav').is(':visible') ) {
+      $('span.open').hide();
+    }
   })
-
   /* Close when someone clicks on the "x" symbol inside the overlay */
   $('.closebtn').on('click', function() {
     $("#myNav").css('width', '0%');
+    $('span.open').show();
   });
 
    $('.colapse-nav img').on('click', function() {
