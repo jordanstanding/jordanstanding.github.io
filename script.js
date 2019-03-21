@@ -1,25 +1,32 @@
 $(document).ready(function() {
+
    $(function() {
         $('.lazy').Lazy();
     });
 
-  // nav stuff
-  /* Open when someone clicks on the span element */
-  $('.open').on('click', function() {
-    if($(window).width() > 768) {
-      $("#myNav").css('width', '50%');
-    } else {
-      $("#myNav").css('width', '100%');
-    }
-    if( $('#myNav').is(':visible') ) {
-      $('span.open').hide();
-    }
-  })
-  /* Close when someone clicks on the "x" symbol inside the overlay */
-  $('.closebtn').on('click', function() {
-    $("#myNav").css('width', '0%');
-    $('span.open').show();
-  });
+    $(function() {
+      if(window.location.href.indexOf("portfolio") > -1) {
+        $('.overlay-content a[href="portfolio.html"]').hide();
+      }
+    });
+
+    // nav stuff
+    /* Open when someone clicks on the span element */
+    $('.open').on('click', function() {
+      if($(window).width() > 768) {
+        $("#myNav").css('width', '50%');
+      } else {
+        $("#myNav").css('width', '100%');
+      }
+      if( $('#myNav').is(':visible') ) {
+        $('span.open').hide();
+      }
+    })
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    $('.closebtn').on('click', function() {
+      $("#myNav").css('width', '0%');
+      $('span.open').show();
+    });
 
    $('.colapse-nav img').on('click', function() {
     $(this).next().fadeToggle('slow', function() {
@@ -42,4 +49,5 @@ $(document).ready(function() {
       }
     });
    });
+
 });
