@@ -15,12 +15,16 @@
   <body>
   <div class="portfolio">
     <a href="index.html"><img class="name lazy" data-src="images/name.png"></a>
-    <nav>
-      <ul id="nav">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="mailto:pensandneedles@gmail.com?Subject=Re:%20Portfolio" target="_blank">CONTACT</a></li>
-      </ul>
-    </nav>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="mailto:pensandneedles@gmail.com?Subject=Re:%20Portfolio" target="_blank">CONTACT</a>
+      </div>
+    </div>
+    <span class="open">☰</span>
 
     <main>
       <section class="container">
@@ -52,11 +56,12 @@
 
       <section class="container">
         <div class="col">
-          <a href="blush_collection.html"><img class="post-image lazy" data-src="images/int1.JPG" alt=""></a>
-          <div class="txt-overlay">
-            <h2>Blush Collection</h2>
-            <p>A vintage, lingerie inspired evening wear collection. </p>
-          </div>
+          <a href="blush_collection.html"><img class="post-image lazy" data-src="images/int1.JPG" alt="">
+            <div class="txt-overlay">
+              <h2>Blush Collection</h2>
+              <p>A vintage, lingerie inspired evening wear collection. </p>
+            </div>
+          </a>
         </div>
         <div class="col">
           <a href="bridal.html"><img class="post-image lazy" data-src="images/BRIDALicon.jpg" alt=""></a>
@@ -69,18 +74,20 @@
 
       <section class="container">
         <div class="col">
-          <a href="active_wear.html"><img class="post-image lazy" data-src="images/ACTIVEicon.jpg" alt=""></a>
-          <div class="txt-overlay">
-            <h2>Activewear</h2>
-            <p>Inspired by the bold lines in a neon sign, these active wear designs are made for the strong girl who is confident and fun. </p>
-          </div>
+          <a href="active_wear.html"><img class="post-image lazy" data-src="images/ACTIVEicon.jpg" alt="">
+            <div class="txt-overlay">
+              <h2>Activewear</h2>
+              <p>Inspired by the bold lines in a neon sign, these active wear designs are made for the strong girl who is confident and fun. </p>
+            </div>
+          </a>
         </div>
         <div class="col">
-          <a href="pensandneedles.html"><img class="post-image lazy" data-src="images/PNicon.jpg" alt=""></a>
+          <a href="pensandneedles.html"><img class="post-image lazy" data-src="images/PNicon.jpg" alt="">
           <div class="txt-overlay">
             <h2>Pens & Needles Co.</h2>
             <p>Examples from my stationary brand Pens & Needles Co. Watercolor, calligraphy, and lots of hand-painted florals.</p>
           </div>
+          </a>
         </div>
       </section>
     </main>

@@ -14,14 +14,17 @@
   </head>
   <body>
   <div class="int">
-    <a href="index.html"><img class="name lazy" data-src="./images/name.png"></a>
-    <nav>
-      <ul id="nav">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="portfolio.html">PORTFOLIO</a></li>
-        <li><a href="mailto:pensandneedles@gmail.com?Subject=Re:%20Portfolio" target="_blank">CONTACT</a></li>
-      </ul>
-    </nav>
+  <a href="index.html"><img class="name lazy" data-src="./images/name.png"></a>
+  <!-- The overlay -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">HOME</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="mailto:pensandneedles@gmail.com?Subject=Re:%20Portfolio" target="_blank">CONTACT</a>
+    </div>
+  </div>
+  <span class="open">☰</span>
 
     <section id="int">
       <h1>INTIMATES COLLECTIONS</h1>
@@ -32,6 +35,11 @@
           <img class="lazy bling blink" data-src="./images/bling-bling.png"/>
           <img class="lazy" data-src="./images/Starry-Eyed2.jpg"/>
           <img class="lazy" data-src="./images/Starry-Eyed3.jpg"/>
+        </div>
+        <img class="lazy marigold" data-src="images/Marigold_plus.jpg" alt="">
+        <div class="flex-col" data-nav="marigold">
+          <img class="lazy" data-src="./images/Marigold-Boheme-1.jpg"/>
+          <img class="lazy" data-src="./images/Marigold-Boheme2.jpg"/>
         </div>
         <img class="lazy hotel" data-src="images/HotelBisousHeader.jpg" alt="">
         <div class="flex-col" data-nav="hotel">
